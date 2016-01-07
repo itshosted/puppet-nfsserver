@@ -1,0 +1,8 @@
+#
+# This file is mananged by PUPPET module nfsserver (https://github.com/itshosted/puppet-nfsserver)
+# Don't edit this file!
+#
+<%- Array(@exports).each do | export | -%>
+<%= export['share'] %>          <%= export['options'] %>
+<% end -%>
+
